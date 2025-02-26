@@ -99,7 +99,7 @@ class geo:
         self.lng = str(lng)
     def _base_url(self, path):
         """Return the base url for endpoints."""
-        url = "http://api.geonames.org/" + path + "JSON?lat=" + self.lat + '&lng=' + self.lng + '&username=KG8ORG'
+        url = "http://api.geonames.org/" + path + "JSON?lat=" + self.lat + '&lng=' + self.lng + '&username='
         return url
     def _request(self, path, params=None):
         """Make the actual request and returns the parsed response."""
